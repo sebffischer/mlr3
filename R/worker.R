@@ -64,6 +64,7 @@ learner_train = function(learner, task, row_ids = NULL, mode = "train") {
   learner$state = insert_named(learner$state, list(
     model = result$result,
     log = log,
+    timestamp = Sys.time(),
     train_time = result$elapsed,
     param_vals = learner$param_set$get_values(),
     task_hash = task$hash,
