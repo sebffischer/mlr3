@@ -66,7 +66,7 @@ learner_train = function(learner, task, row_ids = NULL, mode = "train") {
     log = log,
     timestamp = Sys.time(),
     train_time = result$elapsed,
-    param_vals = learner$param_set$get_values(),
+    param_vals = learner$param_set$values,
     task_hash = task$hash,
     task_prototype = task$data()[0, ]
   ))
@@ -203,14 +203,17 @@ learner_predict = function(learner, task, row_ids = NULL) {
 }
 
 
-workhorse = function(iteration, task, learner, resampling, lgr_threshold = NULL, store_models = FALSE, pb = NULL,
+workhorse = function(iteration, task, learner, resampling, lgr_threshold, store_models = FALSE, pb = NULL,
   mode = "train") {
   if (!is.null(pb)) {
     pb(sprintf("%s|%s|i:%i", task$id, learner$id, iteration))
   }
 
-  if (!is.null(lgr_threshold)) {
-    lg$set_threshold(lgr_threshold)
+  # restore logger thresholds
+  for (package in names(lgr_threshold)) {
+    logger = lgr::get_logger(package)
+    threshold = lgr_threshold[package]
+    logger$set_threshold(threshold)
   }
 
   lg$info("%s learner '%s' on task '%s' (iter %i/%i)",
