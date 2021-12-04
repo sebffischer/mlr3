@@ -164,7 +164,7 @@ benchmark = function(design, store_models = FALSE, store_backends = TRUE, encaps
       mode = grid$mode,
       MoreArgs = list(store_models = store_models, lgr_threshold = lgr_threshold, pb = pb),
       SIMPLIFY = FALSE, USE.NAMES = FALSE, future.globals = FALSE,
-      future.scheduling = structure(TRUE, ordering = "random"), future.packages = "mlr3", future.seed = TRUE,
+      future.scheduling = TRUE, future.packages = "mlr3", future.seed = TRUE,
       future.stdout = future_stdout()
     )
   }
