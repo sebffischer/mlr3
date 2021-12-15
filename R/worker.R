@@ -1,4 +1,4 @@
-learner_train = function(learner, task, row_ids = NULL, mode = "train") {
+learner_train = function(learner, task, row_ids = NULL, mode = "train", validation_ids = NULL) {
   # This wrapper calls learner$train, and additionally performs some basic
   # checks that the training was successful.
   # Exceptions here are possibly encapsulated, so that they get captured
@@ -31,10 +31,13 @@ learner_train = function(learner, task, row_ids = NULL, mode = "train") {
       task$id, length(row_ids), task = task$clone(), row_ids = row_ids)
 
     prev_use = task$row_roles$use
+    prev_validation = task$row_roles$validation
     on.exit({
       task$row_roles$use = prev_use
+      task$row_roles$validation = prev_validation
     }, add = TRUE)
     task$row_roles$use = row_ids
+    task$row_roles$validation = validation_ids
   } else {
     lg$debug("Skip subsetting of task '%s'", task$id)
   }
@@ -226,7 +229,7 @@ workhorse = function(iteration, task, learner, resampling, lgr_threshold, store_
   )
 
   # train model
-  learner = learner_train(learner$clone(), task, sets[["train"]], mode = mode)
+  learner = learner_train(learner$clone(), task, sets[["train"]], mode = mode, validation_ids = sets[["test"]])
 
   # predict for each set
   sets = sets[learner$predict_sets]
