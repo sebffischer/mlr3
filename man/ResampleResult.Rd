@@ -79,6 +79,9 @@ Instantiated \link{Resampling} object which stores the splits into training and 
 \item{\code{learners}}{(list of \link{Learner})\cr
 List of trained learners, sorted by resampling iteration.}
 
+\item{\code{learner_states}}{(list of \code{list()})\cr
+List of states of trained learners.}
+
 \item{\code{warnings}}{(\code{\link[data.table:data.table]{data.table::data.table()}})\cr
 A table with all warning messages.
 Column names are \code{"iteration"} and \code{"msg"}.

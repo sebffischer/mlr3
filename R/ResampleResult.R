@@ -281,6 +281,13 @@ ResampleResult = R6Class("ResampleResult",
       private$.data$learners(private$.view)$learner
     },
 
+    #' @field learner_states (list of `list()`)\cr
+    #' List of states of trained learners.
+    learner_states = function(rhs) {
+      assert_ro_binding(rhs)
+      private$.data$learner_states(private$.view)
+    },
+
     #' @field warnings ([data.table::data.table()])\cr
     #' A table with all warning messages.
     #' Column names are `"iteration"` and `"msg"`.
