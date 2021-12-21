@@ -56,13 +56,8 @@ learner_train = function(learner, task, row_ids = NULL, mode = "train", validati
     .timeout = learner$timeout["train"]
   )
 
-  if (mode == "train") {
-    log = append_log(NULL, "train", result$log$class, result$log$msg)
-    train_time = result$elapsed
-  } else {
-    log = rbindlist(list(learner$state$log, append_log(NULL, "train", result$log$class, result$log$msg)))
-    train_time = learner$state$train_time + result$elapsed
-  }
+  log = append_log(learner$state$log, "train", result$log$class, result$log$msg)
+  train_time = learner$state$train_time %??% 0 + result$elapsed
 
   learner$state = insert_named(learner$state, list(
     model = result$result,
