@@ -59,6 +59,7 @@ learner_train = function(learner, task, row_ids = NULL, mode = "train", validati
   log = append_log(learner$state$log, "train", result$log$class, result$log$msg)
   train_time = learner$state$train_time %??% 0 + result$elapsed
 
+  proto = task$data(rows = integer())
   learner$state = insert_named(learner$state, list(
     model = result$result,
     log = log,
@@ -66,7 +67,8 @@ learner_train = function(learner, task, row_ids = NULL, mode = "train", validati
     train_time = result$elapsed,
     param_vals = learner$param_set$values,
     task_hash = task$hash,
-    data_prototype = task$data(rows = integer()),
+    data_prototype = proto,
+    task_prototype = proto, # deprecated, remove for mlr3learners > 0.5.1
     mlr3_version = packageVersion("mlr3")
   ))
 

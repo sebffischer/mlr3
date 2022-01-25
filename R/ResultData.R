@@ -152,8 +152,8 @@ ResultData = R6Class("ResultData",
     #'  @return list of `list()`
     learner_states = function(view = NULL) {
       .__ii__ = private$get_view_index(view)
-      tab = self$data$fact[.__ii__, "learner_state", with = FALSE][[1]]
-
+      learner_hash = learner_state = NULL
+      self$data$fact[.__ii__][order(learner_hash), learner_state]
     },
 
     #' @description
