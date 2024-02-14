@@ -4,7 +4,7 @@ Each measure has an associated help page, see mlr_measures_[id].
 This dictionary can get populated with additional measures by add-on packages.
 E.g., mlr3proba adds survival measures and mlr3cluster adds
 cluster analysis measures.
-For a more convenient way to retrieve and construct measures, see msr()/msrs()."><title>Dictionary of Performance Measures — mlr_measures • mlr3</title><!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png"><link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png"><link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png"><link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png"><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><link href="../deps/_Roboto-0.4.0/font.css" rel="stylesheet"><link href="../deps/_JetBrains%20Mono-0.4.0/font.css" rel="stylesheet"><link href="../deps/_Roboto%20Slab-0.4.0/font.css" rel="stylesheet"><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Dictionary of Performance Measures — mlr_measures"><meta property="og:description" content="A simple mlr3misc::Dictionary storing objects of class Measure.
+For a more convenient way to retrieve and construct measures, see msr()/msrs()."><title>Dictionary of Performance Measures — mlr_measures • mlr3</title><!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png"><link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png"><link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png"><link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png"><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/Roboto-0.4.8/font.css" rel="stylesheet"><link href="../deps/JetBrains_Mono-0.4.8/font.css" rel="stylesheet"><link href="../deps/Roboto_Slab-0.4.8/font.css" rel="stylesheet"><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Dictionary of Performance Measures — mlr_measures"><meta property="og:description" content="A simple mlr3misc::Dictionary storing objects of class Measure.
 Each measure has an associated help page, see mlr_measures_[id].
 This dictionary can get populated with additional measures by add-on packages.
 E.g., mlr3proba adds survival measures and mlr3cluster adds
@@ -20,7 +20,7 @@ For a more convenient way to retrieve and construct measures, see msr()/msrs()."
     
     <a class="navbar-brand me-2" href="../index.html">mlr3</a>
 
-    <small class="nav-text text-default me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.13.3-9000</small>
+    <small class="nav-text text-default me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.17.2.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,8 +108,8 @@ cluster analysis measures.</p>
     <h2 id="s-methods">S3 methods<a class="anchor" aria-label="anchor" href="#s-methods"></a></h2>
     
 
-<ul><li><p><code>as.data.table(dict, ..., objects = FALSE)</code><br><a href="https://mlr3misc.mlr-org.com/reference/Dictionary.html" class="external-link">mlr3misc::Dictionary</a> -&gt; <code><a href="https://Rdatatable.gitlab.io/data.table/reference/data.table.html" class="external-link">data.table::data.table()</a></code><br>
-Returns a <code><a href="https://Rdatatable.gitlab.io/data.table/reference/data.table.html" class="external-link">data.table::data.table()</a></code> with fields "key", "label", "task_type", "packages",
+<ul><li><p><code>as.data.table(dict, ..., objects = FALSE)</code><br><a href="https://mlr3misc.mlr-org.com/reference/Dictionary.html" class="external-link">mlr3misc::Dictionary</a> -&gt; <code><a href="https://rdatatable.gitlab.io/data.table/reference/data.table.html" class="external-link">data.table::data.table()</a></code><br>
+Returns a <code><a href="https://rdatatable.gitlab.io/data.table/reference/data.table.html" class="external-link">data.table::data.table()</a></code> with fields "key", "label", "task_type", "packages",
 "predict_type", and "task_properties" as columns.
 If <code>objects</code> is set to <code>TRUE</code>, the constructed objects are returned in the list column named <code>object</code>.</p></li>
 </ul></div>
@@ -123,14 +123,14 @@ If <code>objects</code> is set to <code>TRUE</code>, the constructed objects are
 <code><a href="mlr_task_generators.html">mlr_task_generators</a></code>,
 <code><a href="mlr_tasks.html">mlr_tasks</a></code></p>
 <p>Other Measure: 
+<code><a href="Measure.html">Measure</a></code>,
 <code><a href="MeasureClassif.html">MeasureClassif</a></code>,
 <code><a href="MeasureRegr.html">MeasureRegr</a></code>,
 <code><a href="MeasureSimilarity.html">MeasureSimilarity</a></code>,
-<code><a href="Measure.html">Measure</a></code>,
 <code><a href="mlr_measures_aic.html">mlr_measures_aic</a></code>,
 <code><a href="mlr_measures_bic.html">mlr_measures_bic</a></code>,
 <code><a href="mlr_measures_classif.costs.html">mlr_measures_classif.costs</a></code>,
-<code><a href="mlr_measures_debug.html">mlr_measures_debug</a></code>,
+<code><a href="mlr_measures_debug_classif.html">mlr_measures_debug_classif</a></code>,
 <code><a href="mlr_measures_elapsed_time.html">mlr_measures_elapsed_time</a></code>,
 <code><a href="mlr_measures_oob_error.html">mlr_measures_oob_error</a></code>,
 <code><a href="mlr_measures_selected_features.html">mlr_measures_selected_features</a></code></p></div>
@@ -138,9 +138,11 @@ If <code>objects</code> is set to <code>TRUE</code>, the constructed objects are
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu"><a href="https://Rdatatable.gitlab.io/data.table/reference/as.data.table.html" class="external-link">as.data.table</a></span><span class="op">(</span><span class="va">mlr_measures</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdatatable.gitlab.io/data.table/reference/as.data.table.html" class="external-link">as.data.table</a></span><span class="op">(</span><span class="va">mlr_measures</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Key: &lt;key&gt;</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                     key                                               label</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  1:                 aic                        Akaika Information Criterion</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                  &lt;char&gt;                                              &lt;char&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1:                 aic                        Akaike Information Criterion</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  2:                 bic                      Bayesian Information Criterion</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  3:         classif.acc                             Classification Accuracy</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  4:         classif.auc                            Area Under the ROC Curve</span>
@@ -157,51 +159,56 @@ If <code>objects</code> is set to <code>TRUE</code>, the constructed objects are
 <span class="r-out co"><span class="r-pr">#&gt;</span> 15:          classif.fp                                     False Positives</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 16:         classif.fpr                                 False Positive Rate</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 17:     classif.logloss                                            Log Loss</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 18:      classif.mbrier                              Multiclass Brier Score</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19:         classif.mcc                    Matthews Correlation Coefficient</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20:         classif.npv                           Negative Predictive Value</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21:         classif.ppv                           Positive Predictive Value</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22:       classif.prauc                              Precision-Recall Curve</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 23:   classif.precision                                           Precision</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 24:      classif.recall                                              Recall</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 25: classif.sensitivity                                         Sensitivity</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 26: classif.specificity                                         Specificity</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 27:          classif.tn                                      True Negatives</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 28:         classif.tnr                                  True Negative Rate</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 29:          classif.tp                                      True Positives</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 30:         classif.tpr                                  True Positive Rate</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 31:               debug                        Debug Classification Measure</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 32:           oob_error                                    Out-of-bag Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 33:           regr.bias                                                Bias</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 34:           regr.ktau                                       Kendall's tau</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 35:            regr.mae                                 Mean Absolute Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 36:           regr.mape                         Mean Absolute Percent Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 37:          regr.maxae                                  Max Absolute Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 38:          regr.medae                               Median Absolute Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 39:          regr.medse                                Median Squared Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 40:            regr.mse                                  Mean Squared Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 41:           regr.msle                              Mean Squared Log Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 42:          regr.pbias                                        Percent Bias</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 43:            regr.rae                             Relative Absolute Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 44:           regr.rmse                             Root Mean Squared Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 45:          regr.rmsle                         Root Mean Squared Log Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 46:           regr.rrse                         Root Relative Squared Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 47:            regr.rse                              Relative Squared Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 48:            regr.rsq                                           R Squared</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 49:            regr.sae                              Sum of Absolute Errors</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 50:          regr.smape               Symmetric Mean Absolute Percent Error</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 51:           regr.srho                                      Spearman's rho</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 52:            regr.sse                               Sum of Squared Errors</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 53:   selected_features Absolute or Relative Frequency of Selected Features</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 54:         sim.jaccard                            Jaccard Similarity Index</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 55:             sim.phi                          Phi Coefficient Similarity</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 56:           time_both                                        Elapsed Time</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 57:        time_predict                                        Elapsed Time</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 58:          time_train                                        Elapsed Time</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18:   classif.mauc_au1p             Weighted average 1 vs. 1 multiclass AUC</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19:   classif.mauc_au1u                      Average 1 vs. 1 multiclass AUC</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20:   classif.mauc_aunp          Weighted average 1 vs. rest multiclass AUC</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21:   classif.mauc_aunu                   Average 1 vs. rest multiclass AUC</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22:      classif.mbrier                              Multiclass Brier Score</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23:         classif.mcc                    Matthews Correlation Coefficient</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24:         classif.npv                           Negative Predictive Value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25:         classif.ppv                           Positive Predictive Value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26:       classif.prauc                              Precision-Recall Curve</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27:   classif.precision                                           Precision</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28:      classif.recall                                              Recall</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29: classif.sensitivity                                         Sensitivity</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30: classif.specificity                                         Specificity</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31:          classif.tn                                      True Negatives</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32:         classif.tnr                                  True Negative Rate</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33:          classif.tp                                      True Positives</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34:         classif.tpr                                  True Positive Rate</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35:       debug_classif                        Debug Classification Measure</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36:           oob_error                                    Out-of-bag Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37:           regr.bias                                                Bias</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38:           regr.ktau                                       Kendall's tau</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39:            regr.mae                                 Mean Absolute Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40:           regr.mape                         Mean Absolute Percent Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41:          regr.maxae                                  Max Absolute Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42:          regr.medae                               Median Absolute Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 43:          regr.medse                                Median Squared Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 44:            regr.mse                                  Mean Squared Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 45:           regr.msle                              Mean Squared Log Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 46:          regr.pbias                                        Percent Bias</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 47:            regr.rae                             Relative Absolute Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 48:           regr.rmse                             Root Mean Squared Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 49:          regr.rmsle                         Root Mean Squared Log Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 50:           regr.rrse                         Root Relative Squared Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 51:            regr.rse                              Relative Squared Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 52:            regr.rsq                                           R Squared</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 53:            regr.sae                              Sum of Absolute Errors</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 54:          regr.smape               Symmetric Mean Absolute Percent Error</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 55:           regr.srho                                      Spearman's rho</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 56:            regr.sse                               Sum of Squared Errors</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 57:   selected_features Absolute or Relative Frequency of Selected Features</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 58:         sim.jaccard                            Jaccard Similarity Index</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 59:             sim.phi                          Phi Coefficient Similarity</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 60:           time_both                                        Elapsed Time</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 61:        time_predict                                        Elapsed Time</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 62:          time_train                                        Elapsed Time</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                     key                                               label</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     task_type          packages predict_type task_properties</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  1:      &lt;NA&gt;              mlr3     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  2:      &lt;NA&gt;              mlr3     response                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        &lt;char&gt;            &lt;list&gt;       &lt;char&gt;          &lt;list&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1:      &lt;NA&gt;              mlr3         &lt;NA&gt;                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  2:      &lt;NA&gt;              mlr3         &lt;NA&gt;                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  3:   classif mlr3,mlr3measures     response                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  4:   classif mlr3,mlr3measures         prob        twoclass</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  5:   classif mlr3,mlr3measures     response                </span>
@@ -218,24 +225,24 @@ If <code>objects</code> is set to <code>TRUE</code>, the constructed objects are
 <span class="r-out co"><span class="r-pr">#&gt;</span> 16:   classif mlr3,mlr3measures     response        twoclass</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 17:   classif mlr3,mlr3measures         prob                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 18:   classif mlr3,mlr3measures         prob                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19:   classif mlr3,mlr3measures     response        twoclass</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20:   classif mlr3,mlr3measures     response        twoclass</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21:   classif mlr3,mlr3measures     response        twoclass</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22:   classif mlr3,mlr3measures         prob        twoclass</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19:   classif mlr3,mlr3measures         prob                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20:   classif mlr3,mlr3measures         prob                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21:   classif mlr3,mlr3measures         prob                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22:   classif mlr3,mlr3measures         prob                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 23:   classif mlr3,mlr3measures     response        twoclass</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 24:   classif mlr3,mlr3measures     response        twoclass</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 25:   classif mlr3,mlr3measures     response        twoclass</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 26:   classif mlr3,mlr3measures     response        twoclass</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26:   classif mlr3,mlr3measures         prob        twoclass</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 27:   classif mlr3,mlr3measures     response        twoclass</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 28:   classif mlr3,mlr3measures     response        twoclass</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 29:   classif mlr3,mlr3measures     response        twoclass</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 30:   classif mlr3,mlr3measures     response        twoclass</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 31:      &lt;NA&gt;              mlr3     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 32:      &lt;NA&gt;              mlr3     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 33:      regr mlr3,mlr3measures     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 34:      regr mlr3,mlr3measures     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 35:      regr mlr3,mlr3measures     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 36:      regr mlr3,mlr3measures     response                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31:   classif mlr3,mlr3measures     response        twoclass</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32:   classif mlr3,mlr3measures     response        twoclass</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33:   classif mlr3,mlr3measures     response        twoclass</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34:   classif mlr3,mlr3measures     response        twoclass</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35:      &lt;NA&gt;              mlr3     response                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36:      &lt;NA&gt;              mlr3         &lt;NA&gt;                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 37:      regr mlr3,mlr3measures     response                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 38:      regr mlr3,mlr3measures     response                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 39:      regr mlr3,mlr3measures     response                </span>
@@ -252,14 +259,18 @@ If <code>objects</code> is set to <code>TRUE</code>, the constructed objects are
 <span class="r-out co"><span class="r-pr">#&gt;</span> 50:      regr mlr3,mlr3measures     response                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 51:      regr mlr3,mlr3measures     response                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 52:      regr mlr3,mlr3measures     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 53:      &lt;NA&gt;              mlr3     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 54:      &lt;NA&gt; mlr3,mlr3measures     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 55:      &lt;NA&gt; mlr3,mlr3measures     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 56:      &lt;NA&gt;              mlr3     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 57:      &lt;NA&gt;              mlr3     response                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 58:      &lt;NA&gt;              mlr3     response                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 53:      regr mlr3,mlr3measures     response                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 54:      regr mlr3,mlr3measures     response                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 55:      regr mlr3,mlr3measures     response                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 56:      regr mlr3,mlr3measures     response                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 57:      &lt;NA&gt;              mlr3         &lt;NA&gt;                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 58:      &lt;NA&gt; mlr3,mlr3measures         &lt;NA&gt;                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 59:      &lt;NA&gt; mlr3,mlr3measures         &lt;NA&gt;                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 60:      &lt;NA&gt;              mlr3         &lt;NA&gt;                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 61:      &lt;NA&gt;              mlr3         &lt;NA&gt;                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 62:      &lt;NA&gt;              mlr3         &lt;NA&gt;                </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     task_type          packages predict_type task_properties</span>
-<span class="r-in"><span class="va">mlr_measures</span><span class="op">$</span><span class="fu">get</span><span class="op">(</span><span class="st">"classif.ce"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="va">mlr_measures</span><span class="op">$</span><span class="fu">get</span><span class="op">(</span><span class="st">"classif.ce"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;MeasureClassifSimple:classif.ce&gt;: Classification Error</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> * Packages: mlr3, mlr3measures</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> * Range: [0, 1]</span>
@@ -268,7 +279,7 @@ If <code>objects</code> is set to <code>TRUE</code>, the constructed objects are
 <span class="r-out co"><span class="r-pr">#&gt;</span> * Parameters: list()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> * Properties: -</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> * Predict type: response</span>
-<span class="r-in"><span class="fu"><a href="mlr_sugar.html">msr</a></span><span class="op">(</span><span class="st">"regr.mse"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="mlr_sugar.html">msr</a></span><span class="op">(</span><span class="st">"regr.mse"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &lt;MeasureRegrSimple:regr.mse&gt;: Mean Squared Error</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> * Packages: mlr3, mlr3measures</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> * Range: [0, Inf]</span>
@@ -284,11 +295,11 @@ If <code>objects</code> is set to <code>TRUE</code>, the constructed objects are
 
 
     <footer><div class="pkgdown-footer-left">
-  <p></p><p>Developed by Michel Lang, Bernd Bischl, Jakob Richter, Patrick Schratz, Martin Binder.</p>
+  <p></p><p>Developed by Michel Lang, Bernd Bischl, Jakob Richter, Patrick Schratz, Martin Binder, Florian Pfisterer, Raphael Sonabend, Marc Becker.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
     </footer></div>
