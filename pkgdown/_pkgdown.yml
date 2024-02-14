@@ -116,6 +116,7 @@ reference:
       - PredictionData
       - predict.Learner
       - mlr_test_helpers
+      - cool_function
   - title: Package
     contents:
       - mlr3-package
